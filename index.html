@@ -1,110 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Google</title>
-        <style>
-            html, body {
-                height:1080px;
-                width:810px;
-                display:block;
-                margin-left:auto;
-                margin-right:auto;
-            }
-            .logo {
-                display:block;
-                margin-top:50px;
-                margin-left:auto;
-                margin-right:auto;
-                margin-bottom:-20px;
-                width:86%
-            }
-            .body_1 {
-                text-align:center;
-                margin:0px;
-                background-color:#e7e7e7;
-                font-size:20px;
-                font-family:'Times New Roman', Times, serif;
-            }
-            .body_2 {
-                text-align:center;
-                margin:0px;
-                font-size:20px;
-                font-family:'Times New Roman', Times, serif;
-            }
-            .body_3 {
-                text-align:center;
-                margin:0px;
-                line-height:1.8;
-                margin-bottom:-2.5px;
-                background-color:#e7e7e7;
-                font-size:20px;
-                font-family:'Times New Roman', Times, serif;
-            }
-            .text {
-                line-height:1.8;
-                margin-bottom:-2.5px;
-            }
-            .copyright {
-                line-height:1.8;
-                margin-top:-4px;
-                margin-bottom:-2.5px;
-                font-size:17px;
-                text-align:center;
-                font-family:'Times New Roman', Times, serif;
-            }
-            #search_bar {
-                margin-left:auto;
-                margin-right:auto;
-                height:27.5px;
-                width:73%;
-                border-radius:0px;
-            }
-            #email_bar {
-                margin-left:auto;
-                margin-right:auto;
-                height:23.5px;
-                width:38%;
-                border-radius:0px;
-            }
-            .buttons {
-                margin-left:auto;
-                margin-right:auto;
-                width:100%;
-            }
-        </style>
+        <!-- <link href="styles.css" rel="stylesheet"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Google! Search Engine</title>
     </head>
-    <body>
-        <img class="logo" src="https://www.keyweo.com/wp-content/uploads/2021/09/Google_1998_logo-300x97.png">
-        <div class="body_1">
-            <p class="text">Search the web using Google!</p>
-            <form action="https://www.google.com/search">
-            <input id="search_bar" type="search">
-            </form>
-            <div class="buttons" style="margin-bottom:-25px;">
-                <select style="height:25.5px;margin-top:0px;">
-                    <option>10 Results</option>
-                </select>
-                <button style="height:25px;font-weight:bold;">Google Search</button>
-                <button style="height:25px;font-weight:bold;">I'm feeling lucky</button>
-            </div>
-            <p class="text"><i>Index contains ~25 million pages (soon to be much bigger)</i></p>
-        </div>
-        <div class="body_2">
-            <h2 style="margin-top:5px;"><a href="https://about.google/">About Google!</a></h2>
-            <div style="margin-bottom:-22px;">
-                <h4><a href="https://www.stanford.edu/search/">Stanford Search</a> <a href="linux.org">Linux Search</a></h4>
-            </div>
-        </div>
-        <div class="body_3">
-            <p class="text">Get Google! updates monthyl!</p>
-            <div>
-                <input value="your e-mail" id="email_bar" type="email">
-                <button style="height:25px;font-weight:bold;">Subscribe</button>
-                <a style="font-size:15px;" href="http://wayback.archive.org/">Archive</a>
-            </div>
-            <p style="margin:-32.7px">‎</p>
-        </div>
-        <p class="copyright" style="margin-top:28px;">Copyright ©1997-8 Stanford University</p>
+    <body style="background-color: #FFFFFF">
+        <form method="get" action="/1998/search">
+            <center><img src="google.jpg" width=351 height=113><br>
+                <table style="border: 0px; border-spacing: 0px; padding: 5px; width: 70%">
+                    <tr>
+                        <td style="background-color: #EEEEEE">
+                            <center>
+                                Search the web using Google!<br>
+                                <input type="text" name="query" value="" size=40><br>
+                                <select name="num">
+                                    <option value=10>10 Results</option>
+                                    <option value=30>30 Results</option>
+                                    <option value=100>100 Results</option>
+                                </select>
+                                <input type="submit" value="Google Search">
+                                <input type="submit" name="random" value="I'm feeling lucky"><br>
+                                <i>Index contains ~25 million pages (soon to be much bigger)</i>
+                            </center>
+                        </td>
+                    </tr>
+        </form>
+                    <tr>
+                        <td>
+                            <center>
+                                <h2><a href="/about.html">About Google!</a></h2>
+                                <a href="/stanford">Stanford Search</a>
+                                <a href="/linux">Linux Search</a>
+                            </center>
+                        </td>
+                    </tr>
+                    <tr style="text-align: left;">
+                        <td style="vertical-align: middle;background-color: #EEEEEE;width: 100%">
+                            <center>Get Google! updates monthly!</center>
+                        </td>
+                    </tr>
+        <form method="get" action="http://www.findmail.com/cgi-bin/subscribe.py">
+            <input type="hidden" name="listname" value="google-friends">
+                    <tr style="text-align: left">
+                        <td style="background-color: #EEEEEE">
+                            <center>
+                                <input type="text" name="emailaddress" placeholder="your e-mail" size=18>
+                                <input type="submit" name="SubmitAction" value="Subscribe">
+                                <font size=-1>&nbsp;&nbsp;<a href="http://www.findmail.com/list/google-friends/">Archive</a></font>
+                            </center>
+                        </td>
+                    </tr>
+                </table>   
+            </center>
+        </form>
+        <center>
+            <font size=-1>Copyright &copy;1997-8 Stanford University</font>
+        </center>
     </body>
 </html>
