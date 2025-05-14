@@ -1,61 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- <link href="styles.css" rel="stylesheet"> -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="styles.css" rel="stylesheet">
+        <meta charset="UTF-8" />
         <title>Google! Search Engine</title>
     </head>
-    <body style="background-color: #FFFFFF">
-        <form method="get" action="/1998/search">
-            <center><img src="google.jpg" width=351 height=113><br>
-                <table style="border: 0px; border-spacing: 0px; padding: 5px; width: 70%">
+    <body>
+        <form method="get" action="/google-1998/search">
+            <img src="google.jpg">
+            <br>
+            <table>
+                <tbody>
                     <tr>
-                        <td style="background-color: #EEEEEE">
-                            <center>
-                                Search the web using Google!<br>
-                                <input type="text" name="query" value="" size=40><br>
-                                <select name="num">
-                                    <option value=10>10 Results</option>
-                                    <option value=30>30 Results</option>
-                                    <option value=100>100 Results</option>
-                                </select>
-                                <input type="submit" value="Google Search">
-                                <input type="submit" name="random" value="I'm feeling lucky"><br>
-                                <i>Index contains ~25 million pages (soon to be much bigger)</i>
-                            </center>
+                        <td class="t1">
+                        Search the web using Google!<br>
+                        <input type="text" name="query" value="" size=40><br>
+                        <select name="results">
+                            <option value=10>10 results</option>
+                            <option value=30>30 results</option>
+                            <option value=100>100 results</option>
+                        </select>
+                        <input type="submit" value="Google Search">
+                        <input type="submit" name="random" value="I'm feeling lucky"><br>
+                        <i>Index contains ~25 million pages (soon to be much bigger)</i>
                         </td>
                     </tr>
-        </form>
                     <tr>
                         <td>
-                            <center>
-                                <h2><a href="/about.html">About Google!</a></h2>
-                                <a href="/stanford">Stanford Search</a>
-                                <a href="/linux">Linux Search</a>
-                            </center>
+                        <h2>
+                            <a href="/about.html">About Google!</a>
+                        </h2>
+                        <div class="t2">
+                            <a href="/stanford">Stanford Search</a>
+                            <a href="/linux">Linux Search</a>
+                        </div>
                         </td>
                     </tr>
-                    <tr style="text-align: left;">
-                        <td style="vertical-align: middle;background-color: #EEEEEE;width: 100%">
-                            <center>Get Google! updates monthly!</center>
-                        </td>
-                    </tr>
-        <form method="get" action="http://www.findmail.com/cgi-bin/subscribe.py">
-            <input type="hidden" name="listname" value="google-friends">
-                    <tr style="text-align: left">
-                        <td style="background-color: #EEEEEE">
-                            <center>
-                                <input type="text" name="emailaddress" placeholder="your e-mail" size=18>
-                                <input type="submit" name="SubmitAction" value="Subscribe">
-                                <font size=-1>&nbsp;&nbsp;<a href="http://www.findmail.com/list/google-friends/">Archive</a></font>
-                            </center>
-                        </td>
-                    </tr>
-                </table>   
-            </center>
+                </tbody>
+            </table>
         </form>
-        <center>
-            <font size=-1>Copyright &copy;1997-8 Stanford University</font>
-        </center>
+        <form method="get" action="http://www.findmail.com/cgi-bin/subscribe.py">
+        <input type="hidden" name="listname" value="google-friends">
+            <table>
+                <tr>
+                    <td class="t3">
+                        <div class="space">Get Google! updates monthly!</div>
+                        <input type="text" name="emailaddress" placeholder="your e-mail" size=18>
+                        <input type="submit" name="SubmitAction" value="Subscribe">
+                        <span id="archive">&nbsp;<a href="http://www.findmail.com/list/google-friends/">Archive</a></span>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <div id="copyright">
+            <span>Copyright &copy;1997-8 Stanford University</span>
+        </div>
     </body>
 </html>
